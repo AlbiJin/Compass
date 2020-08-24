@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <com.example.compass.CircleSeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_wheel_black_spc"
+
+        android:clickable="false"
+        android:padding="16dp"
+        app:wheel_pointer_color="#90009688"
+        app:wheel_pointer_radius="12dp"
+        app:wheel_reached_color="#00FFFFFF"
+        app:wheel_reached_width="24dp"
+        app:wheel_unreached_color="#00FFFFFF"
+        app:wheel_unreached_width="12dp" />
+
+    <EditText
+        android:id="@+id/textview"
+        android:layout_width="160dp"
+        android:layout_height="70dp"
+        android:gravity="bottom"
+        android:layout_centerInParent="true"
+        android:layout_marginVertical="-60dp"
+        android:textColor="#FFFEFE"
+        android:textSize="14dp"
+        android:cursorVisible="true"
+        />
+
+    <TextView
+        android:id="@+id/texthide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="false"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@id/seekbar"
+        android:layout_marginTop="50dp"
+        android:textSize="18dp"
+        android:textColor="#009688"
+        />
+
+
+
+
+</RelativeLayout>
